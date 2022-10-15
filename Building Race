@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main()
+{
+    int t;
+    scanf("%d",&t);
+    while(t--)
+    {
+        float a,b,x,y,n,s;
+        scanf("%f%f%f%f",&a,&b,&x,&y);
+        n=a/x;
+        s=b/y;
+        if(s>n)
+        {
+            printf("Chef\n");
+        }
+        else if (n>s)
+        {
+            printf("Chefina\n");
+        }
+        else
+        {
+            printf("Both\n");
+        }
+    }
+    return 0;
+}
